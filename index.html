@@ -13,12 +13,17 @@
 </head>
 <body>
 <h1>Onmind Privacy Policy</h1>
-<p class="muted">Last updated: May 21, 2026</p>
+<p class="muted">Last updated: May 25, 2026</p>
 
 <p>Onmind is designed to be private by default. The app runs Apple's on-device
 AI model directly on your iPhone, iPad, and Apple Watch. We do not operate
 servers that receive your conversations, and we do not collect, sell, or share
 your personal data.</p>
+
+<p><strong>Onmind does not use any third-party AI service.</strong> All chat
+processing happens on your device using Apple's Foundation Models framework
+(Apple Intelligence). Your messages are never sent to OpenAI, Google, Anthropic,
+or any other third-party AI provider.</p>
 
 <h2>What we collect</h2>
 <p><strong>Nothing.</strong> Onmind has no account system and no analytics, ads,
@@ -31,12 +36,23 @@ optionally Face ID). They are never transmitted to us or to any third party.
 You can delete individual chats, clear all history, and clear saved memory at
 any time in the app.</p>
 
-<h2>Optional web search</h2>
-<p>Web search is off unless you turn it on in Settings. When enabled and you ask
-a question that requires a lookup, the app sends only your search query to
-DuckDuckGo to retrieve an answer. No account identifiers are attached, and we do
-not store your queries or results. See DuckDuckGo's privacy policy at
-duckduckgo.com/privacy.</p>
+<h2>Optional web search (off by default, explicit consent required)</h2>
+<p>Onmind ships fully offline. An optional Web Search feature is available, but
+it is off by default and requires your explicit, in-app consent before any
+network request is made. You see exactly what is sent and where, on both the
+onboarding consent screen and the in-app permission sheet, and you can revoke
+permission at any time in Settings.</p>
+<ul>
+  <li><strong>What is sent:</strong> only your typed search query.</li>
+  <li><strong>Where it is sent:</strong> DuckDuckGo's keyless Instant Answer API
+      (<a href="https://duckduckgo.com/privacy">duckduckgo.com/privacy</a>).</li>
+  <li><strong>What is never sent:</strong> your chat messages, saved memory,
+      identity, location, or any tracking identifier.</li>
+</ul>
+<p>Onmind does not store your queries or the results. DuckDuckGo's data
+practices are governed by their own privacy policy linked above. Turning the
+feature off in Settings also revokes the consent flag, so no further requests
+are made.</p>
 
 <h2>Purchases</h2>
 <p>The one-time "Onmind Pro" unlock is processed entirely by Apple through the
