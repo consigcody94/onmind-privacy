@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Onmind — Privacy Policy</title>
+<meta name="description" content="The Onmind privacy policy. Onmind runs on your device: no account, no analytics, no tracking. Your conversations stay on your iPhone.">
 <style>
-  body { font: 17px/1.6 -apple-system, system-ui, sans-serif; max-width: 720px;
-         margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
-  h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 32px; }
-  .muted { color: #666; }
+  :root{--indigo:#5b6cf0;--ink:#16172a;--gray:#5b6075;--line:#e7e9f2}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);line-height:1.65;background:#fff;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+  .top{display:flex;align-items:center;gap:12px;margin-bottom:30px}
+  .top .dot{width:40px;height:40px;border-radius:11px;background:linear-gradient(140deg,#1b1e36,#0c0d18);
+    display:grid;place-items:center;color:#7c8cff;font-weight:800;font-size:.9rem}
+  .top b{font-size:1.05rem}
+  h1{font-size:2.2rem;letter-spacing:-.02em;margin:.2em 0 .1em}
+  .upd{color:var(--gray);margin-bottom:1.6em}
+  h2{font-size:1.25rem;margin:1.7em 0 .5em;letter-spacing:-.01em}
+  p,li{color:#2a2c3a;margin-bottom:.8em}
+  ul{padding-left:1.3em}
+  a{color:var(--indigo)}
+  .kick{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo)}
+  footer{border-top:1px solid var(--line);margin-top:2.5em;padding-top:1.2em;color:var(--gray);font-size:.9rem}
 </style>
 </head>
 <body>
-<h1>Onmind Privacy Policy</h1>
-<p class="muted">Last updated: May 25, 2026</p>
+<div class="wrap">
+  <div class="top"><span class="dot">OM</span><b>Onmind</b></div>
+  <span class="kick">Legal</span>
+  <h1>Privacy Policy</h1>
+  <p class="upd">Last updated: May 30, 2026</p>
 
-<p>Onmind is designed to be private by default. The app runs Apple's on-device
-AI model directly on your iPhone, iPad, and Apple Watch. We do not operate
-servers that receive your conversations, and we do not collect, sell, or share
-your personal data.</p>
+  <p>Onmind is built by Onmind Studios on a simple principle: your data should stay yours. This policy explains, plainly, what Onmind does and doesn't do with your information.</p>
 
-<p><strong>Onmind does not use any third-party AI service.</strong> All chat
-processing happens on your device using Apple's Foundation Models framework
-(Apple Intelligence). Your messages are never sent to OpenAI, Google, Anthropic,
-or any other third-party AI provider.</p>
+  <h2>The short version</h2>
+  <ul>
+    <li>Onmind runs <strong>on your device</strong>. We do not operate a server that receives your conversations.</li>
+    <li>There is <strong>no account</strong> and <strong>no sign-up</strong>.</li>
+    <li>We collect <strong>no analytics</strong>, use <strong>no tracking</strong>, and do <strong>not</strong> sell or share your data.</li>
+    <li>Onmind does <strong>not</strong> use any third-party AI service — no OpenAI, Google, or Anthropic.</li>
+    <li>Onmind makes <strong>no network requests</strong> for its features — it works fully offline.</li>
+  </ul>
 
-<h2>What we collect</h2>
-<p><strong>Nothing.</strong> Onmind has no account system and no analytics, ads,
-or tracking. We do not collect personal information.</p>
+  <h2>How Onmind works</h2>
+  <p>Onmind uses Apple's Foundation Models framework — the on-device large language model included with Apple Intelligence. When you send a message, the response is generated locally on your device's Neural Engine. Your prompts and conversations are not transmitted to us or any third party for generation. Onmind functions in airplane mode.</p>
 
-<h2>Your conversations and memory</h2>
-<p>Your chats and any facts Onmind remembers about you are stored
-<strong>only on your device</strong>, protected by iOS data protection (and
-optionally Face ID). They are never transmitted to us or to any third party.
-You can delete individual chats, clear all history, and clear saved memory at
-any time in the app.</p>
+  <h2>Information stored on your device</h2>
+  <p>The following stay on your device, protected by iOS data protection, and are never uploaded by us:</p>
+  <ul>
+    <li>Your conversation history and any facts Onmind remembers about you.</li>
+    <li>Generated images, imported documents, and photos you share with the app.</li>
+    <li>Your settings and preferences.</li>
+  </ul>
+  <p>You can delete individual chats, clear all history, and clear saved memory at any time in the app, and you may add an optional Face ID lock. Removing the app removes its on-device data.</p>
 
-<h2>Optional web search (off by default, explicit consent required)</h2>
-<p>Onmind ships fully offline. An optional Web Search feature is available, but
-it is off by default and requires your explicit, in-app consent before any
-network request is made. You see exactly what is sent and where, on both the
-onboarding consent screen and the in-app permission sheet, and you can revoke
-permission at any time in Settings.</p>
-<ul>
-  <li><strong>What is sent:</strong> only your typed search query.</li>
-  <li><strong>Where it is sent:</strong> DuckDuckGo's keyless Instant Answer API
-      (<a href="https://duckduckgo.com/privacy">duckduckgo.com/privacy</a>).</li>
-  <li><strong>What is never sent:</strong> your chat messages, saved memory,
-      identity, location, or any tracking identifier.</li>
-</ul>
-<p>Onmind does not store your queries or the results. DuckDuckGo's data
-practices are governed by their own privacy policy linked above. Turning the
-feature off in Settings also revokes the consent flag, so no further requests
-are made.</p>
+  <h2>Device permissions</h2>
+  <p>Onmind asks for certain Apple system permissions only when you use the related feature, and the data is used solely on your device:</p>
+  <ul>
+    <li><strong>Microphone &amp; Speech Recognition</strong> — for hands-free voice mode.</li>
+    <li><strong>Reminders &amp; Calendar</strong> — to create reminders and events when you ask.</li>
+    <li><strong>Contacts</strong> — to look up a contact when you ask.</li>
+    <li><strong>Photos</strong> — to read or describe an image you choose to share.</li>
+  </ul>
+  <p>You can review or revoke these at any time in the iOS Settings app.</p>
 
-<h2>Purchases</h2>
-<p>The one-time "Onmind Pro" unlock is processed entirely by Apple through the
-App Store. We never see or receive your payment information.</p>
+  <h2>No network requests</h2>
+  <p>Onmind does not contact any server to function. There is no web search, no analytics endpoint, and no third-party AI service. Everything — chat, images, voice, documents — happens on your device.</p>
 
-<h2>Children</h2>
-<p>Onmind is not directed at children and does not knowingly collect data from
-anyone.</p>
+  <h2>Purchases</h2>
+  <p>Onmind is a one-time, paid app purchased through the App Store. Payment is processed entirely by Apple; we never see or receive your payment details.</p>
 
-<h2>Changes</h2>
-<p>If this policy changes, we will update this page and the "Last updated" date.</p>
+  <h2>Children's privacy</h2>
+  <p>Onmind does not collect personal information from anyone, including children. We do not knowingly gather data from children under 13.</p>
 
-<h2>Contact</h2>
-<p>Questions? Email <a href="mailto:rockvillecodymaryland@gmail.com">rockvillecodymaryland@gmail.com</a>.</p>
+  <h2>Changes to this policy</h2>
+  <p>If we make material changes, we will update the date above and post the revised version here.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy? Email <a href="mailto:privacy@onmindstudios.com">privacy@onmindstudios.com</a>.</p>
+
+  <footer>© 2026 Onmind Studios · <a href="https://onmindstudios.com">onmindstudios.com</a> · <a href="https://onmindstudios.com/privacy.html">Full policy</a></footer>
+</div>
 </body>
 </html>
